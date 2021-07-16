@@ -11,7 +11,7 @@ db = {}
 
 @app.route("/", methods=['POST'])
 def post():
-    payload = requests.get_json()
+    payload = requests.json
 
     db['ranking'] = payload['ranking']
 
