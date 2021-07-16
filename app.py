@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from flask import Flask
-import requests
+from flask import Flask, request
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
-db = {}
+db = {'ranking': []}
 
 
 @app.route("/", methods=['POST'])
 def post():
-    payload = requests.json
-
+    payload = request.get_json()
     db['ranking'] = payload['ranking']
-
     return {}, 200
 
 
