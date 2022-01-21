@@ -4,10 +4,7 @@
 public class FooModel {
     String name;
 
-    public FooModel (String name) {
-        if (name == null) {
-            throw Exception;
-        }
+    public void setName(String name) {
         this.name = name;
     }
 
