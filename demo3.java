@@ -11,7 +11,7 @@ public interface main {
 
 
     /**
-    * Fooアカウントを取得する
+    * フラグを無視してFooアカウントを取得する
     */
-    FooAccount getAccount();
+    FooAccount getAccountIgnoringFlag();
 }
