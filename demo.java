@@ -4,11 +4,14 @@
 public class FooModel {
     String name;
 
-    public String getName() {
-        return name;
+    public FooModel (String name) {
+        if (name == null) {
+            throw Exception;
+        }
+        this.name = name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 }
