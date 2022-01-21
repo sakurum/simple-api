@@ -5,20 +5,12 @@
  * @return
  */
 public static boolean isTodayOrAfterSystemDate(Date date) {
-    if (date != null
-            && DateUtils.isSameYearMonthDate(date, DateUtils.getSystemDate())
-            || DateUtils.isFreshnessThanOrEqualToBaseDate(DateUtils.getSystemDate(), date)) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
 
 public void main {
 
 
-
+    // 今日以降であれば実行
     if (isTodayOrAfterSystemDate(date)) {
         // foo
         //
